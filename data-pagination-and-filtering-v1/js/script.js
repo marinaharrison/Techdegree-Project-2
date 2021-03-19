@@ -84,6 +84,7 @@ linkList.addEventListener('click',(event) => {
    if (event.target.tagName === "BUTTON"){
       let buttonActive = document.querySelector('.active');
       event.target.buttonActive = 'active';
+      
       let page = event.target.textContent;
       
 //Called the showPage function with the list and page as parameters.      
