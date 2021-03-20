@@ -83,7 +83,10 @@ linkList.addEventListener('click',(event) => {
 //Created a conditional statement so that the event only fires when the active button was clicked.
    if (event.target.tagName === "BUTTON"){
       let buttonActive = document.querySelector('.active');
-      event.target.buttonActive = 'active';
+      buttonActive.className='';
+      event.target.className = 'active';
+      
+
       
       let page = event.target.textContent;
       
