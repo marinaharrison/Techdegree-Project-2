@@ -83,6 +83,9 @@ linkList.addEventListener('click',(event) => {
 //Created a conditional statement so that the event only fires when the active button was clicked.
    if (event.target.tagName === "BUTTON"){
       let buttonActive = document.querySelector('.active');
+
+      //Fixed the issue where the active class was only on the first button. In the code below, the buttonActive
+      //was set to an empty string to remove the  active class, then added to the event target.      
       buttonActive.className='';
       event.target.className = 'active';
       
